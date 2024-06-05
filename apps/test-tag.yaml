@@ -9,7 +9,7 @@ spec:
   source:
     path: canary-rollout-ingress
     repoURL: https://github.com/testcodefresh/rollouts-demo.git
-    targetRevision: blue
+    targetRevision: green
   destination:
     name: in-cluster
     namespace: test-date
