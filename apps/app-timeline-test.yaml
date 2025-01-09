@@ -6,13 +6,13 @@ metadata:
     - resources-finalizer.argocd.argoproj.io/foreground
 spec:
   project: default
-  source:
-    path: canary-rollout-ingress
-    repoURL: https://github.com/testcodefresh/rollouts-demo.git
-    targetRevision: blue
   destination:
     name: in-cluster
     namespace: default
+  source:
+    path: canary-rollout-ingress
+    repoURL: https://github.com/testcodefresh/rollouts-demo.git
+    targetRevision: green
   syncPolicy:
     automated:
       prune: true
