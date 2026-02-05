@@ -12,7 +12,7 @@ spec:
   source:
     path: canary-rollout-ingress
     repoURL: https://github.com/testcodefresh/rollouts-demo.git
-    targetRevision: green
+    targetRevision: blue
   syncPolicy:
     automated:
       prune: true
